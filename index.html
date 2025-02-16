@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Masked Mutt - The Legend</title>
+  <title>Revenge Arc - Crypto Rebellion</title>
   <!-- Google Fonts for futuristic typography -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap" />
   <!-- Include CCapture.js for capturing animations -->
@@ -61,7 +61,7 @@
     #textureUpload {
       display: none;
     }
-
+    
     /* Header Navigation */
     header {
       position: fixed;
@@ -90,7 +90,7 @@
     nav ul li:hover {
       color: #00ff00;
     }
-
+    
     /* Custom Cursor */
     .custom-cursor {
       position: fixed;
@@ -104,7 +104,7 @@
       mix-blend-mode: difference;
       z-index: 10000;
     }
-
+    
     /* Hero Section */
     .hero {
       height: 100vh;
@@ -131,6 +131,11 @@
       text-align: center;
       padding: 0 20px;
     }
+    .hero-content .tagline {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
     .hero-content h1 {
       font-size: 4em;
       margin-bottom: 20px;
@@ -138,8 +143,9 @@
     }
     .hero-content p {
       font-size: 1.5em;
+      max-width: 800px;
     }
-
+    
     /* Section Base Styles */
     .section {
       padding: 80px 20px;
@@ -159,7 +165,7 @@
       margin: 0 auto 20px;
       line-height: 1.5;
     }
-
+    
     /* Gallery Section (Masonry Layout) */
     #gallery .gallery-container {
       column-count: 3;
@@ -177,12 +183,12 @@
       transform: scale(1.05);
       border-color: #00ff00;
     }
-
+    
     /* Social Hub Section */
     #social .social-buttons {
       margin: 20px 0;
     }
-
+    
     /* Interactive 3D Model Section */
     #interactive .upload-container {
       margin-bottom: 20px;
@@ -200,7 +206,7 @@
       font-size: 1.3em;
       padding: 12px 20px;
     }
-
+    
     /* Footer */
     footer {
       padding: 20px;
@@ -216,44 +222,49 @@
 <body>
   <!-- Custom Cursor -->
   <div class="custom-cursor" id="cursor"></div>
-
+  
   <!-- Header Navigation -->
   <header>
-    <div class="logo">Masked Mutt</div>
+    <div class="logo">Revenge Arc</div>
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#gallery">Crypto Chronicles</a></li>
         <li><a href="#social">Social Hub</a></li>
         <li><a href="#interactive">3D Model</a></li>
       </ul>
     </nav>
   </header>
-
+  
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <h1>Masked Mutt</h1>
-      <p>The legend is here.</p>
+      <div class="tagline"></div>
+      <h1>Revenge Arc</h1>
+      <p>
+        Your coins are down, and you know exactly who did it. Welcome to the Revenge Arc.
+      </p>
     </div>
   </section>
-
+  
   <!-- About Section -->
   <section class="section" id="about">
-    <h2>About the Legend</h2>
+    <h2>About Revenge Arc</h2>
     <p>
-      Masked Mutt is a canine enigma—born in the shadows, mastering the art of stealth and charm. His journey from an ordinary pup to a living legend is filled with daring adventures and unforgettable escapades.
+      From the ashes of broken promises emerged Pudding—the unlikely hero with a name deceivingly sweet. Don't get it twisted: when the rug pulls hit hard, we fight back. Revenge Arc is where we reclaim our power, one bold move at a time.
     </p>
     <p>
-      Dive deep into his story and explore the mischief and mystery behind every move.
+      This is more than a project; it’s a rallying cry for crypto warriors ready to flip the narrative and take what's theirs.
     </p>
   </section>
-
+  
   <!-- Gallery Section -->
   <section class="section" id="gallery">
-    <h2>Gallery</h2>
-    <p>Explore a dynamic collection of 6 images arranged in a Tetris‑like layout.</p>
+    <h2>Posted up in the cut</h2>
+    <p>
+      I'm outside. I really do this.
+    </p>
     <div class="gallery-container">
       <img src="gallery1.jpg" alt="Gallery Image 1">
       <img src="gallery2.jpg" alt="Gallery Image 2">
@@ -263,24 +274,26 @@
       <img src="gallery6.jpg" alt="Gallery Image 6">
     </div>
   </section>
-
+  
   <!-- Social Hub Section -->
   <section class="section" id="social">
     <h2>Social Hub</h2>
     <p>
-      Join the pack! Follow, share, and interact with fellow fans using #MaskedMutt on social media.
+      The revolution isn’t complete without you. Connect with fellow Pudding supporters who’ve seen it all in the trenches. Share your story, vent your frustrations, or simply make memes.
     </p>
     <div class="social-buttons">
       <button onclick="window.open('https://twitter.com', '_blank')">Twitter</button>
       <button onclick="window.open('https://pump.fun', '_blank')">Pump.fun</button>
     </div>
-    <p>Live updates coming soon!</p>
+    <p>Stay tuned for live updates and community shout-outs!</p>
   </section>
-
+  
   <!-- Interactive 3D Model Section -->
   <section class="section" id="interactive">
-    <h2>Interactive 3D Model</h2>
-    <p>Upload your photo to texture a 3D Masked Mutt object. Spin, zoom, and play with the model—and then download a 5‑second clip as a GIF or MP4!</p>
+    <h2>Show Your Support</h2>
+    <p>
+      Upload your photo to texture our 3D model—a defiant symbol of crypto resilience. Watch as your image transforms this digital relic into a living testament of revenge. Then capture a 5‑second clip as a GIF or MP4 to share your own slice of this revolution.
+    </p>
     <div class="upload-container">
       <label for="textureUpload" class="upload-button">Click to upload your 3D image</label>
       <input type="file" id="textureUpload" accept="image/*">
@@ -291,12 +304,12 @@
       <button id="downloadMP4" disabled>Download as MP4</button>
     </div>
   </section>
-
+  
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Masked Mutt. All rights reserved.</p>
+    <p>&copy; 2025 Revenge Arc. All rights reserved.</p>
   </footer>
-
+  
   <!-- Include Three.js, CCapture.js and html2canvas Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -307,26 +320,30 @@
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
     });
-
-    // --- Interactive 3D Model Code ---
+    
+    // --- Interactive 3D Model Code (No Modal) ---
     const threeCanvas = document.getElementById('three-canvas');
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, threeCanvas.width / threeCanvas.height, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas: threeCanvas, antialias: true });
+    // Configure renderer with preserveDrawingBuffer so we can export later
+    const renderer = new THREE.WebGLRenderer({ 
+      canvas: threeCanvas, 
+      antialias: true,
+      preserveDrawingBuffer: true
+    });
     renderer.setSize(threeCanvas.width, threeCanvas.height);
-
+    
     // Create a cube with a default material (wireframe)
     const geometry = new THREE.BoxGeometry();
     let material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
     camera.position.z = 3;
-
+    
     let textureUploaded = false;
     let capturer = null;
     let capturing = false;
-    let captureType = '';
-
+    
     // Animation loop (integrated with CCapture)
     function animate() {
       requestAnimationFrame(animate);
@@ -338,8 +355,8 @@
       }
     }
     animate();
-
-    // File upload event: load image as texture
+    
+    // File upload event: load image as texture directly without popup
     document.getElementById('textureUpload').addEventListener('change', function(event) {
       const file = event.target.files[0];
       if (file) {
@@ -350,15 +367,15 @@
             cube.material = new THREE.MeshBasicMaterial({ map: texture });
             cube.material.needsUpdate = true;
             textureUploaded = true;
-            // Enable download buttons now that a texture is loaded
+            // Enable download buttons now that texture is set
             document.getElementById('downloadGIF').disabled = false;
             document.getElementById('downloadMP4').disabled = false;
           });
-        }
+        };
         reader.readAsDataURL(file);
       }
     });
-
+    
     // Start capturing for 5 seconds then stop and save
     function startCapturing() {
       capturing = true;
@@ -370,19 +387,17 @@
       capturer.stop();
       capturer.save();
     }
-
+    
     // Download as GIF button event
     document.getElementById('downloadGIF').addEventListener('click', () => {
       if (!textureUploaded) return;
-      captureType = 'gif';
       capturer = new CCapture({ format: 'gif', workersPath: '' });
       startCapturing();
     });
-
+    
     // Download as MP4 button event (using webm format)
     document.getElementById('downloadMP4').addEventListener('click', () => {
       if (!textureUploaded) return;
-      captureType = 'mp4';
       capturer = new CCapture({ format: 'webm', framerate: 60 });
       startCapturing();
     });
