@@ -6,7 +6,7 @@
   <title>Revenge Arc - Crypto Rebellion</title>
   <!-- Google Fonts for futuristic typography -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap" />
-  <!-- Include CCapture.js for capturing animations (using unpkg CDN) -->
+  <!-- Include CCapture.js for capturing animations (via unpkg) -->
   <script src="https://unpkg.com/ccapture.js@1.1.0/build/CCapture.all.min.js"></script>
   <style>
     /* Global Reset & Base Styles */
@@ -243,7 +243,7 @@
       <div class="tagline"></div>
       <h1>Revenge Arc</h1>
       <p>
-        Your coins are down, and you know exactly who did it. Welcome to the Revenge Arc.
+        Your coins are down, and you know exactly who did it. Welcome to the Revenge Arc.<br><br/>contract address: coming soon
       </p>
     </div>
   </section>
@@ -321,7 +321,7 @@
       cursor.style.top = e.clientY + 'px';
     });
     
-    // --- Interactive 3D Model Code (Without Modal) ---
+    // --- Interactive 3D Model Code (No Modal) ---
     const threeCanvas = document.getElementById('three-canvas');
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, threeCanvas.width / threeCanvas.height, 0.1, 1000);
